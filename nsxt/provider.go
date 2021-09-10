@@ -203,9 +203,7 @@ func Provider() *schema.Provider {
 			"nsxt_logical_tier1_router":             dataSourceNsxtLogicalTier1Router(),
 			"nsxt_mac_pool":                         dataSourceNsxtMacPool(),
 			"nsxt_ns_group":                         dataSourceNsxtNsGroup(),
-			"nsxt_ns_groups":                        dataSourceNsxtNsGroups(),
 			"nsxt_ns_service":                       dataSourceNsxtNsService(),
-			"nsxt_ns_services":                      dataSourceNsxtNsServices(),
 			"nsxt_edge_cluster":                     dataSourceNsxtEdgeCluster(),
 			"nsxt_certificate":                      dataSourceNsxtCertificate(),
 			"nsxt_ip_pool":                          dataSourceNsxtIPPool(),
@@ -245,6 +243,7 @@ func Provider() *schema.Provider {
 			"nsxt_policy_dhcp_server":               dataSourceNsxtPolicyDhcpServer(),
 			"nsxt_policy_bfd_profile":               dataSourceNsxtPolicyBfdProfile(),
 			"nsxt_policy_intrusion_service_profile": dataSourceNsxtPolicyIntrusionServiceProfile(),
+			"nsxt_policy_lb_service":                dataSourceNsxtPolicyLbService(),
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
